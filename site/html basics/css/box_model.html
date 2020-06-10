@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>The Box Model</title>
+<style>
+
+*{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	/*border-box doesn't get inherited*/
+	/*so we have to apply it in * so that it gets appiled to every single 
+	element*/
+}
+
+body {
+	
+  background-color: gray; 
+}
+
+#box {
+  background-color: blue;
+  padding: 10px;
+  border: 5px solid black;
+  width: 300px;
+  height: 50px;
+  margin-top: 50px;
+  overflow: auto;
+
+}
+#content {
+  background-color: #90EE90; /*green*/
+
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+</style>
+</head>
+<body>
+
+<h1>Box Model</h1>
+
+<div id="box">
+  <div id="content">If you’re just getting into web development, chances are you think you know how the web works — at least on a basic level.
+…But then you try to explain how a basic website works and draw a blank. What does an IP address mean again? How does the “client-server” model work, exactly?
+Development frameworks are powerful these days. So powerful, in fact, that it’s easy for us newcomers to lose track of the basics of how the web, y’know, *works.*
+I know I did. No shame admitting it: the web is complicated, and it’s only when you start engineering in the backend that you realize how important those fundamentals are. (If you want to make web apps that actually work, anyway.) </div>
+</div>
+
+
+</body>
+</html>
